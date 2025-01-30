@@ -21,20 +21,17 @@ spec:
 apiVersion: spaces.tanzu.vmware.com/v1alpha1
 kind: Space
 metadata:
-  name: gitops-created-space2
+  name: space-b
   namespace: default
 spec:
   availabilityTargets:
-  - name: k8s-upgrade
+  - name: all-regions.tanzu.vmware.com
     replicas: 1
   revisionHistoryLimit: 10
   template:
     spec:
       profiles:
-      - name: sp-networking
-        values:
-          inline: null
-      - name: spring-dev.tanzu.vmware.com
+      - name: apps.tanzu.vmware.com
         values:
           inline: null
       resources: {}
