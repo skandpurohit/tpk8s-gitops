@@ -11,7 +11,7 @@ spec:
   template:
     spec:
       profiles:
-      - name: warroyo-networking
+      - name: sp-networking
         values:
           inline: null
       - name: spring-dev.tanzu.vmware.com
@@ -22,7 +22,6 @@ spec:
     type: Recreate
 
 ---
-
 apiVersion: spaces.tanzu.vmware.com/v1alpha1
 kind: Space
 metadata:
@@ -36,7 +35,7 @@ spec:
   template:
     spec:
       profiles:
-      - name: warroyo-networking
+      - name: sp-networking
         values:
           inline: null
       - name: spring-dev.tanzu.vmware.com
