@@ -2,7 +2,7 @@
 apiVersion: secretgen.carvel.dev/v1alpha1
 kind: SecretImport
 metadata:
-  name: team-a-kubeconfig
+  name: team-a-project-kubeconfig
   namespace: tpk8s
 spec:
   fromNamespace: ucp-token-generator
