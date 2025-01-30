@@ -13,4 +13,4 @@ spec:
   ref:
     branch: main
   timeout: 60s
-  url: https://github.com/warroyo/tpk8s-gitops-flux
+  url: https://github.com/skandpurohit/tpk8s-gitops

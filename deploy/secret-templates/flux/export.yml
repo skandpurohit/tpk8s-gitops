@@ -2,7 +2,7 @@
 apiVersion: secretgen.carvel.dev/v1alpha1
 kind: SecretExport
 metadata:
-  name: amer-west-project-kubeconfig
+  name: team-a-kubeconfig
   namespace: ucp-token-generator
 spec:
   toNamespace: '*'

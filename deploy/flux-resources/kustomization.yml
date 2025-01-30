@@ -2,7 +2,7 @@
 apiVersion: secretgen.carvel.dev/v1alpha1
 kind: SecretImport
 metadata:
-  name: amer-west-project-kubeconfig
+  name: team-a-kubeconfig
   namespace: tpk8s
 spec:
   fromNamespace: ucp-token-generator
@@ -10,16 +10,16 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: amer-west-project
+  name: team-a-project
   namespace: tpk8s
 spec:
   force: false
   interval: 1m0s
-  path: ./deploy/tpk8s/AMER-West
+  path: ./deploy/tpk8s/team-a
   prune: true
   sourceRef:
     kind: GitRepository
     name: tpk8s
   kubeConfig:
     secretRef:
-      name: amer-west-project-kubeconfig
+      name: team-a-project-kubeconfig
