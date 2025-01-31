@@ -1,39 +1,39 @@
-apiVersion: spaces.tanzu.vmware.com/v1alpha1
-kind: Space
-metadata:
-  name: space-a
-  namespace: default
-spec:
-  availabilityTargets:
-  - name: all-regions.tanzu.vmware.com
-    replicas: 1
-  revisionHistoryLimit: 10
-  template:
-    spec:
-      profiles:
-      - name: apps.tanzu.vmware.com
-        values:
-          inline: null
-      resources: {}
-  updateStrategy:
-    type: Recreate
----
-apiVersion: spaces.tanzu.vmware.com/v1alpha1
-kind: Space
-metadata:
-  name: space-b
-  namespace: default
-spec:
-  availabilityTargets:
-  - name: all-regions.tanzu.vmware.com
-    replicas: 1
-  revisionHistoryLimit: 10
-  template:
-    spec:
-      profiles:
-      - name: apps.tanzu.vmware.com
-        values:
-          inline: null
-      resources: {}
-  updateStrategy:
-    type: Recreate
+# apiVersion: spaces.tanzu.vmware.com/v1alpha1
+# kind: Space
+# metadata:
+#   name: space-a
+#   namespace: default
+# spec:
+#   availabilityTargets:
+#   - name: all-regions.tanzu.vmware.com
+#     replicas: 1
+#   revisionHistoryLimit: 10
+#   template:
+#     spec:
+#       profiles:
+#       - name: apps.tanzu.vmware.com
+#         values:
+#           inline: null
+#       resources: {}
+#   updateStrategy:
+#     type: Recreate
+# ---
+# apiVersion: spaces.tanzu.vmware.com/v1alpha1
+# kind: Space
+# metadata:
+#   name: space-b
+#   namespace: default
+# spec:
+#   availabilityTargets:
+#   - name: all-regions.tanzu.vmware.com
+#     replicas: 1
+#   revisionHistoryLimit: 10
+#   template:
+#     spec:
+#       profiles:
+#       - name: apps.tanzu.vmware.com
+#         values:
+#           inline: null
+#       resources: {}
+#   updateStrategy:
+#     type: Recreate
