@@ -18,17 +18,17 @@ spec:
           clusters:
           - cluster:
               server: https://platform.tpsm.pvetnz.com/org/59dc0432-1993-43be-a855-b6c4e218b5fa/project/bf3d112c-4438-4d3b-9bdf-810e51e5245a
-            name: tanzu-cli-tpsm-80f5cac9:team-a
+            name: xyz
           contexts:
           - context:
-              cluster: tanzu-cli-tpsm-80f5cac9:team-a
-              user: tanzu-cli-tpsm-80f5cac9-user
-            name: tanzu-cli-tpsm-80f5cac9:team-a
-          current-context: tanzu-cli-tpsm-80f5cac9:team-a
+              cluster: xyz
+              user: abc
+            name: efg
+          current-context: efg
           kind: Config
           preferences: {}
           users:
-          - name: tanzu-cli-tpsm-80f5cac9-user
+          - name: abc
             user:
               token: "{{ .token }}"
   data:
